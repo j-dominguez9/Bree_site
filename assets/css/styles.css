@@ -30,8 +30,8 @@
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
+    --normal-font-size: 1.5rem;
+    --smaller-font-size: 1.2rem;
   }
 }
 
