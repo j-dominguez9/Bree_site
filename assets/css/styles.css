@@ -11,8 +11,8 @@
   --body-font: 'Cormorant', serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --smaller-font-size: .85rem;
+  --normal-font-size: 1.2rem;
+  --smaller-font-size: 1rem;
   /*===== Margins =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -27,8 +27,8 @@
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
-    --smaller-font-size: .85rem;
+    --normal-font-size: 1.2rem;
+    --smaller-font-size: 1rem;
   }
 }
 
@@ -102,6 +102,15 @@ img {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
+
+.cap-grid {
+  max-width: 1024px;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
 
 .l-header {
   width: 100%;
@@ -313,7 +322,7 @@ home-background:after {
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .skills__subtitle {
@@ -486,7 +495,7 @@ home-background:after {
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    text-align: initial;
+    text-align: justify;
   }
   .skills__container {
     grid-template-columns: .7fr;
