@@ -11,8 +11,8 @@
   --body-font: 'Cormorant', serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: 1.5rem;
-  --smaller-font-size: 1.2rem;
+  --normal-font-size: 1rem;
+  --smaller-font-size: .85rem;
   /*===== Margins =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -27,8 +27,8 @@
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
-    --normal-font-size: 1.5rem;
-    --smaller-font-size: 1.2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .85rem;
   }
 }
 
@@ -235,7 +235,6 @@ home-background:after {
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1; /* Ensure the text stays above the background */
 }
