@@ -286,6 +286,14 @@ home-background:after {
   width: 360px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /*BUTTONS*/
 .button {
   display: inline-block;
