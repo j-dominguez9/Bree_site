@@ -62,6 +62,10 @@ a {
   text-decoration: none;
 }
 
+/* a:hover { */
+  /* text-decoration: underline; */
+/* } */
+
 img {
   max-width: 100%;
   height: auto;
@@ -286,13 +290,6 @@ home-background:after {
   width: 360px;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 
 /*BUTTONS*/
 .button {
@@ -398,6 +395,46 @@ a:hover {
 .skills__img {
   border-radius: .5rem;
 }
+
+.skills__p  a {
+  position:relative;
+  /* display:inline-block; */
+  /* color: #666; */
+  color: var(--first-color);
+  transition: color .2 ease;
+  /* padding: 3px 0; */
+
+  &:hover {
+    &::after,
+    &::before {
+      width: 100%;
+      left: 0%;
+    }
+  }
+  &::after,
+  &::before {
+    content: ''; 
+    position: absolute;
+    top: calc(100%);
+    width: 0;
+    right: 0;
+    height: 2px;
+  }
+  
+  &::before {
+    transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+    /* background: #2196f3; */
+    background: var(--first-color);
+  }
+  
+  &::after {
+    transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    /* background: #F44336; */
+    background: #c98e00;
+  }
+}
+
+
 
 /* ===== WORK =====*/
 .work__container {
